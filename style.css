@@ -1,0 +1,113 @@
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(10, auto-fit);
+    grid-template-rows: repeat(10, auto-fit);
+    margin-top: 100px;
+
+
+
+   
+    
+}
+
+
+
+body
+{
+    margin: 20px;
+}
+
+.navbar
+{
+    padding: 20px;
+    grid-area: navbar;
+    grid-column: 3 / 3;
+    grid-row: 2 / 6;
+    background-color: blue;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: 20px;
+  
+   
+    
+}
+
+.navbar span 
+{
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    margin-right: 50px;
+
+}
+
+.navbar ul li
+{
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    display: block;
+    justify-content: center;
+}
+
+.navbar ul 
+{
+   
+   list-style: none;
+}
+
+
+.main
+{
+    grid-area: main;
+    grid-column: 4 / 12;
+    grid-row: 2 / 6;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.title-flex
+{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main table tr td
+{
+    border: solid 3px black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.main table
+{   border-collapse: collapse;
+    border: solid 3px black;
+    
+  
+}
+
+.main table tr td span
+{
+  font-weight: bold;
+  color: blue;
+
+}
+
+.title
+{
+    font-size: clamp(3rem, 5vw, 5rem);
+}
