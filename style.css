@@ -71,8 +71,6 @@ body
     display: flex;
     justify-content: center;
 
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
 
     
 }
@@ -101,13 +99,13 @@ body
     border: solid 3px black;
     text-align: center;
     padding: 10px;
-    font-size: clamp(1rem, 1vw, 1rem);
+    font-size: clamp(0.9rem, 1vw, 1rem);
 }
 
 .main table
 {   border-collapse: collapse;
     border: solid 3px black;
-    min-width: 900px;
+
     
   
 }
@@ -179,5 +177,26 @@ body
         justify-content: center;
 
         
+    }
+
+    
+}
+
+@media (max-width:794px)
+{
+    .main table tr td
+        {
+            border: solid 1px black;
+            text-align: center;
+            padding: 10px;
+            font-size: clamp(0.5rem, 0.8vw, 0.8rem);
+        }
+
+        .main table
+    {   border-collapse: collapse;
+        border: solid 1px black;
+
+        
+    
     }
 }
