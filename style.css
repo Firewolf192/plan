@@ -9,6 +9,10 @@
 }
 
 
+html 
+{
+    font-size: clamp(14px, 1.2vw, 18px);
+}
 
 body
 {
@@ -67,6 +71,9 @@ body
     display: flex;
     justify-content: center;
 
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+
     
 }
 
@@ -86,17 +93,21 @@ body
     
 }
 
+
+
+
 .main table tr td
 {
     border: solid 3px black;
     text-align: center;
     padding: 10px;
-    font-size: clamp(0.1rem, 1.1vw, 2rem);
+    font-size: clamp(1rem, 1vw, 1rem);
 }
 
 .main table
 {   border-collapse: collapse;
     border: solid 3px black;
+    min-width: 900px;
     
   
 }
