@@ -1,12 +1,9 @@
 .grid
 {
     display: grid;
-    grid-template-columns: repeat(10, auto-fit);
-    grid-template-rows: repeat(10, auto-fit);
+    grid-template-columns: repeat(auto-fit, auto-fit);
+    grid-template-rows: repeat(auto-fit, auto-fit);
     margin-top: 100px;
-
-
-
    
     
 }
@@ -15,7 +12,7 @@
 
 body
 {
-    margin: 20px;
+    margin: 0;
 }
 
 .navbar
@@ -28,6 +25,8 @@ body
     border-radius: 30px;
     margin-right: 10px;
     margin-left: 20px;
+    
+    
   
    
     
@@ -38,7 +37,9 @@ body
     color: white;
     font-family: Arial;
     font-size: 20px;
-    margin-right: 50px;
+    
+    
+   
 
 }
 
@@ -90,7 +91,7 @@ body
     border: solid 3px black;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: clamp(0.1rem, 1.1vw, 2rem);
 }
 
 .main table
@@ -110,4 +111,62 @@ body
 .title
 {
     font-size: clamp(3rem, 5vw, 5rem);
+}
+
+@media (max-width:1407px)
+{
+    .navbar
+        {
+            padding: 20px;
+            grid-area: navbar;
+            grid-column: 4 / 12;
+            grid-row: 12 / 12;
+            background-color: blue;
+            border-radius: 30px;
+            margin-right: 10px;
+            margin-left: 20px;
+            margin-top: 50px;
+            
+            
+        
+        
+            
+        }
+
+    .navbar ul li
+        {
+            color: white;
+            font-family: Arial;
+            font-size: 20px;
+          
+        }
+
+    .navbar ul 
+    {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .navbar span 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width:1205px)
+{
+    
+    .main
+    {
+        grid-area: main;
+        grid-column: 4 / 12;
+        grid-row: 2 / 6;
+        display: flex;
+        justify-content: center;
+
+        
+    }
 }
