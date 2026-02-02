@@ -3,16 +3,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, auto-fit);
     grid-template-rows: repeat(auto-fit, auto-fit);
-    margin-top: 100px;
+    margin-top: 70px;
    
     
 }
 
 
-html 
-{
-    font-size: clamp(14px, 1.2vw, 18px);
-}
 
 body
 {
@@ -99,7 +95,7 @@ body
     border: solid 3px black;
     text-align: center;
     padding: 10px;
-    font-size: clamp(0.9rem, 1vw, 1rem);
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
 }
 
 .main table
@@ -121,6 +117,36 @@ body
 {
     font-size: clamp(3rem, 5vw, 5rem);
 }
+
+
+.ad
+{
+    font-weight: bold;
+    background-color: rgb(142, 195, 255);
+    
+}
+
+.a-l
+{
+    background-color: hsl(192, 95%, 90%);
+}
+
+.start
+{
+    grid-column: 4 / 5;
+    grid-row: 7 / 8;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.start span
+{
+    font-size: clamp(0.5rem, 1vw 1rem);
+}
+
 
 @media (max-width:1407px)
 {
@@ -162,6 +188,13 @@ body
         display: flex;
         justify-content: center;
     }
+
+    .start
+        {
+            grid-column: 5 / 6;
+            margin-top: 20px;
+        }
+
     
 }
 
@@ -186,17 +219,10 @@ body
 {
     .main table tr td
         {
-            border: solid 1px black;
             text-align: center;
             padding: 10px;
             font-size: clamp(0.5rem, 0.8vw, 0.8rem);
         }
 
-        .main table
-    {   border-collapse: collapse;
-        border: solid 1px black;
-
-        
-    
-    }
+  
 }
